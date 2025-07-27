@@ -4,6 +4,10 @@ import pyautogui
 import time
 import os
 
+
+typing_interval = 0.012
+
+
 time.sleep(3)
 
 fullScreen = pyautogui.screenshot("full_screen.png")
@@ -25,12 +29,9 @@ areaToDelete = extractedText.find("english") + 7
 text = extractedText[areaToDelete:]
 
 while text.find("\n") != -1:
-    print(text.find("\n"))
     text = text.replace("\n", " ")
 
-print(text)
-
-pyautogui.typewrite(text, interval=0.05)
+pyautogui.typewrite(text, interval=typing_interval)
 
 os.remove("full_screen.png")
 
