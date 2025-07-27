@@ -5,7 +5,7 @@ import time
 import os
 
 
-typing_interval = 0.012
+typing_interval = 0.011298 # exact interval needed to achieve 999 wpm (max limit on monkeytype)
 
 
 time.sleep(3)
@@ -34,4 +34,3 @@ while text.find("\n") != -1:
 pyautogui.typewrite(text, interval=typing_interval)
 
 os.remove("full_screen.png")
-
