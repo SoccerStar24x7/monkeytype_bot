@@ -10,4 +10,10 @@ You should:
 2b. the monkeytype test should be 25 words or less. The bot can't do more than 25 words.
 3. Wait and watch the magic.
 
+Required dependencies (run commands in the virtual environment):
+- OpenCV: "pip install opencv-python"
+- PyTesseract: "pip install pytesseract". must also install Tesseract OCR Engine beforehand.
+- PyAutoGUI: "pip install pyautogui"
+- TKinter: "pip install tk"
+
 I used OpenCV to crop and load the screenshot (to see the text), PyTesseract to interpret images to text, and PyAutoGui to type. 
