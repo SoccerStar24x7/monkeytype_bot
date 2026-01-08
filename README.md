@@ -16,4 +16,7 @@ Required dependencies (run commands in the virtual environment):
 - PyAutoGUI: "pip install pyautogui"
 - TKinter: "pip install tk"
 
+  Or, you can use this command:
+  pip install opencv-python pytesseract pyautogui tk
+
 I used OpenCV to crop and load the screenshot (to see the text), PyTesseract to interpret images to text, and PyAutoGui to type. 
